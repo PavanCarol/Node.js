@@ -1,0 +1,14 @@
+{
+  "name": "node",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Formação de Node.js na plataforma Rocketseat.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
