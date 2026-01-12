@@ -1,11 +1,17 @@
-interface User{
-    birthYear: number
-}
+import fastify = require("fastify")
+import { knex } from "./database"
 
-function calculateAgeOfUser(user: User){
-    return new Date().getFullYear() - user.birthYear
-}
+const app = fastify()
 
-calculateAgeOfUser({
-    birthYear: 1994    
+//GET,POST,PUT,PATCH,DELTE
+
+app.get('/hello', async () => {
+    const tables = await knex('sqlite_schema').select('*')
+    return tables
+})
+
+app.listen({
+    port:3333, 
+}).then(() => {
+    console.group('HTTP')
 })
