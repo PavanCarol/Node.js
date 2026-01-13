@@ -8,6 +8,7 @@ import { checkSessionIdExists } from "../middleware/check-session-id-exist"
 //Cookies --> Formas da gente manter contexto entre requisições
 
 //Plugin
+
 export async function transactionsRoutes(app: FastifyInstance){
 
 
@@ -15,9 +16,7 @@ export async function transactionsRoutes(app: FastifyInstance){
         console.log(`[${request.method}] ${request.url}`)
     })
 
-    app.get('/', {
-        preHandler: [checkSessionIdExists],
-    },async (request, reply) => {
+    app.get('/',async (request, reply) => {
 
         const { sessionId } = request.cookies
 
@@ -76,9 +75,7 @@ export async function transactionsRoutes(app: FastifyInstance){
 
     //Request Body: HTTPs -> Cr
     //{title, amount, type:credit e debit}
-    app.post('/',{
-        preHandler: [checkSessionIdExists],
-    }, async (request, reply) => {
+    app.post('/',async (request, reply) => {
 
     const createTransactionBodySchema = z.object({
       title: z.string(),
