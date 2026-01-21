@@ -1,7 +1,7 @@
 //testes= 
 //unitarios: unidade da sua aplicação 
 //integração: comunicação entre duas ou mais unidades
-//e2e - pota a ponta: simulam o usurio operando na nossa aplicacao
+//e2e - ponta a ponta: simulam o usurio operando na nossa aplicacao
 
 // Piramide de testes: E2e (não dependem de nenhuma tecnologia,não dependem de arquitetura)
 

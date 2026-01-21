@@ -1,6 +1,14 @@
 # Node.js
 Formação de Node.js na plataforma Rocketseat.
 
+## Git
+## Fastify
+## Hooks
+## Variáveis ambiente
+## Migrations
+## Query builder
+## Testes end-to-end (e2e)
+
 #RF (requisitos funcionais)
 
 - [x] O usuario deve porder criar uma nova transação;
